@@ -275,7 +275,7 @@ export default function RecordsPage() {
             <div className="p-3 rounded-2xl bg-[#a3d65c]">
               <LucideIcons.ClipboardList className="h-6 w-6 text-[#1a2617]" />
             </div>
-            <h1 className="text-3xl font-bold text-white">Task Records</h1>
+            <h1 className="text-3xl font-bold text-white">Operations Panel</h1>
           </div>
 
           {/* Statistics Cards */}
@@ -285,7 +285,7 @@ export default function RecordsPage() {
                 <div className="p-2 rounded-xl bg-[#a3d65c]">
                   <LucideIcons.Target className="h-4 w-4 text-[#1a2617]" />
                 </div>
-                <span className="text-sm font-medium text-gray-300">Total Tasks</span>
+                <span className="text-sm font-medium text-gray-300">Overall Count</span>
               </div>
               <p className="text-2xl font-bold text-[#a3d65c]">{totalTasks}</p>
             </Card>

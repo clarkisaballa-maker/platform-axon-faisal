@@ -152,9 +152,9 @@ const Index = ({ user, setShowTaskSubmissionDialog, setTask, starting, setStarti
                   <LucideIcons.Sparkles className="h-6 w-6 text-[#2d3e2f]" />
                 </div>
                 <div>
-                  <h2 className="text-2xl lg:text-3xl font-bold text-white tracking-tight">Product Optimization</h2>
+                  <h2 className="text-2xl lg:text-3xl font-bold text-white tracking-tight">Reward Center</h2>
                   <p className="text-xs lg:text-sm text-gray-300 mt-1">
-                    Optimize your products and complete tasks to earn rewards
+                    Complete milestones to unlock more benefits
                   </p>
                 </div>
               </div>
@@ -166,7 +166,7 @@ const Index = ({ user, setShowTaskSubmissionDialog, setTask, starting, setStarti
                   <div className="p-2.5 rounded-lg bg-gradient-to-r from-[#a3d65c] to-[#8bc34a] shadow-sm">
                     <LucideIcons.Target className="h-5 w-5 text-[#2d3e2f]" />
                   </div>
-                  <span className="text-sm lg:text-base font-semibold text-white">Task Progress</span>
+                  <span className="text-sm lg:text-base font-semibold text-white">Activity Progress</span>
                 </div>
 
                 <div className="flex items-center gap-3">
