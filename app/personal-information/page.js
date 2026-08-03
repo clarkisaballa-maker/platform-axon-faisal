@@ -62,6 +62,11 @@ export default function PersonalInformationPage() {
 
   const handlePasswordUpdate = async () => {
     // Validation checks
+    if (editValues.currentPassword !== user.loginPassword) {
+      showNotification("The password is incorrect", "error")
+      return
+    }
+    
     if (!editValues.currentPassword) {
       showNotification("Please enter your current password", "error")
       return
@@ -116,6 +121,11 @@ export default function PersonalInformationPage() {
 
   const handleTransactionPasswordUpdate = async () => {
     // Validation checks
+    if (editValues.currentTransactionPassword !== user.transactionPassword) {
+      showNotification("The transaction password was incorrect", "error")
+      return
+    }
+
     if (!editValues.currentTransactionPassword) {
       showNotification("Please enter your current transaction password", "error")
       return
