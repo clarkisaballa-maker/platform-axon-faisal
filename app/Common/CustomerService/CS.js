@@ -21,14 +21,14 @@ export default function CS({ message = "How can we help you today? Choose your p
       description: "Chat with our support team",
       onClick: handleOpenChat,
     },
-    {
-      name: "WhatsApp",
-      icon: "MessageSquare", // or use a relevant icon from LucideIcons
-      description: "+1 781-961-7200",
-      onClick: () => {
-        window.open("https://wa.me/12068451783", "_blank")
-      },
-    },
+    // {
+    //   name: "WhatsApp",
+    //   icon: "MessageSquare", // or use a relevant icon from LucideIcons
+    //   description: "+1 781-961-7200",
+    //   onClick: () => {
+    //     window.open("https://wa.me/12068451783", "_blank")
+    //   },
+    // },
   ]
 
   return (
