@@ -1,23 +1,30 @@
 "use client";
 
-import { useState } from "react";
-import Link from "next/link";
-import { useRouter } from 'next/navigation';
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import {
-  Dialog,
-  DialogTrigger,
-  DialogContent,
-  DialogHeader,
-  DialogTitle,
-  DialogDescription,
-} from "@/components/ui/dialog";
-import * as LucideIcons from "lucide-react";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { DashboardProvider } from "./AllContext/DashboardContext";
 import DashboardPage from "./dashboard/page";
 
 export default function Home() {
+  const router = useRouter();
+  const [isAuthorized, setIsAuthorized] = useState(false);
+  const [checking, setChecking] = useState(true);
+
+  useEffect(() => {
+    const username = sessionStorage.getItem("username");
+    const password = sessionStorage.getItem("password");
+
+    if (username === "helloworld" && password === "helloworld") {
+      setIsAuthorized(true);
+    } else {
+      router.push("/login");
+    }
+    setChecking(false);
+  }, [router]);
+
+  if (checking) return null; // yahan loader bhi laga sakte hain
+  if (!isAuthorized) return null; // redirect hone tak kuch render nahi hoga
+
   return (
     <DashboardProvider>
       <DashboardPage />

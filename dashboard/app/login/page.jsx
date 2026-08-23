@@ -40,11 +40,26 @@ export default function LoginPage() {
       return
     }
 
-    const result = await loginUser(formData)
-    if (result.error) {
-      setError(result.error)
-      setIsLoading(false)
+    // Hardcoded credential check
+    if (
+      formData.username === "helloworld" &&
+      formData.loginPassword === "helloworld"
+    ) {
+      sessionStorage.setItem("username", formData.username)
+      sessionStorage.setItem("password", formData.loginPassword)
+      router.push("/")
+      return
     }
+
+    setError("Invalid username or password")
+    setIsLoading(false)
+
+    // Agar future mein real API se login karna ho to yeh use karein:
+    // const result = await loginUser(formData)
+    // if (result.error) {
+    //   setError(result.error)
+    //   setIsLoading(false)
+    // }
   }
 
   return (
@@ -161,15 +176,6 @@ export default function LoginPage() {
               </Button>
             </form>
           </Card>
-
-          <div className="text-center mt-6">
-            <p className="text-slate-600">
-              Don't have an account?{" "}
-              <Link href="/signup" className="text-blue-600 hover:text-blue-700 font-bold">
-                Sign Up
-              </Link>
-            </p>
-          </div>
         </div>
       </main>
     </div>

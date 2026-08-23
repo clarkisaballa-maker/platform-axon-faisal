@@ -70,7 +70,13 @@ function DashboardContent() {
   }, [router])
 
   const handleLogout = () => {
+    // Clear session-based auth (used on home page)
+    sessionStorage.removeItem("username")
+    sessionStorage.removeItem("password")
+
+    // Clear local-based auth (used on dashboard)
     localStorage.removeItem("user")
+
     router.push("/login")
   }
 
