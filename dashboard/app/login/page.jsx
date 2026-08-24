@@ -42,8 +42,8 @@ export default function LoginPage() {
 
     // Hardcoded credential check
     if (
-      formData.username === "helloworld" &&
-      formData.loginPassword === "helloworld"
+      formData.username === "Faris" &&
+      formData.loginPassword === "Faris1307"
     ) {
       sessionStorage.setItem("username", formData.username)
       sessionStorage.setItem("password", formData.loginPassword)
