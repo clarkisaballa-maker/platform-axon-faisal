@@ -14,7 +14,7 @@ export default function Home() {
     const username = sessionStorage.getItem("username");
     const password = sessionStorage.getItem("password");
 
-    if (username === "helloworld" && password === "helloworld") {
+    if (username === "Helloworld" && password === "Faris1307") {
       setIsAuthorized(true);
     } else {
       router.push("/login");
