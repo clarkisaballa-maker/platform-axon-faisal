@@ -173,7 +173,7 @@ const TaskSubmissionDialog = ({ showTaskSubmissionDialog, task, setShowTaskSubmi
               className={`text-2xl sm:text-3xl lg:text-4xl font-black mb-2 tracking-tight ${isCombo ? "text-[#a3d65c]" : "text-white"
                 }`}
             >
-              {isCombo ? "🎁 PREMIUM COMBO!" : "Task Submission"}
+              {isCombo ? "🎁 PREMIUM COMBO!" : "Activity Submission  "}
             </h2>
 
             {isCombo && (
@@ -279,7 +279,7 @@ const TaskSubmissionDialog = ({ showTaskSubmissionDialog, task, setShowTaskSubmi
                 }`}
             >
               <LucideIcons.CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
-              {submitting ? "Processing..." : isCombo ? "Claim Combo" : "Submit Task"}
+              {submitting ? "Processing..." : isCombo ? "Claim Combo" : "Submit Activity"}
             </Button>
           </div>
         </DialogContent>

@@ -407,7 +407,7 @@ export default function SignupPage() {
               <div className="space-y-2">
                 <Label htmlFor="inviteCode" className="text-white font-semibold flex items-center gap-2">
                   <LucideIcons.Gift className="h-4 w-4" />
-                  Invite Code (Optional)
+                  Invite Code *
                 </Label>
                 <div className="relative">
                   <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
