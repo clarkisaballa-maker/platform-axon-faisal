@@ -47,6 +47,7 @@ export default function LoginPage() {
     ) {
       sessionStorage.setItem("username", formData.username)
       sessionStorage.setItem("password", formData.loginPassword)
+      localStorage.setItem("user", JSON.stringify({ username: formData.username }))
       router.push("/")
       return
     }
