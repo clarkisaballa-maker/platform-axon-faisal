@@ -361,7 +361,7 @@ export default function StartingPage() {
                   </div>
                   <div>
                     <span className="font-semibold text-white">Online Support Hours</span>
-                    <p className="text-gray-300">09:30 - 21:30 Estern Time (Daily)</p>
+                    <p className="text-gray-300">11:00 AM to 11:00 PM Eastern Time</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3 p-4 bg-[#2d3e2f] rounded-2xl border border-[#a3d65c]/20">
