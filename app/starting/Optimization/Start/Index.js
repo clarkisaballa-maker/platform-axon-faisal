@@ -61,7 +61,7 @@ const Index = ({ user, setShowTaskSubmissionDialog, setTask, starting, setStarti
 
     // ✅ Working hours check
     if (!isWithinEasternWorkingHours()) {
-      setCSMessage("Platform working hours are from 09:30AM to 09:30PM Eastern Time")
+      setCSMessage("Platform working hours are from 11:00 AM to 11:00 PM Eastern Time")
       setShowCSModal(true)
       return
     }
