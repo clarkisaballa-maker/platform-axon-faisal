@@ -60,11 +60,11 @@ const Index = ({ user, setShowTaskSubmissionDialog, setTask, starting, setStarti
     if (!user?._id) return
 
     // ✅ Working hours check
-    if (!isWithinEasternWorkingHours()) {
-      setCSMessage("Platform working hours are from 11:00 AM to 11:00 PM Eastern Time")
-      setShowCSModal(true)
-      return
-    }
+    // if (!isWithinEasternWorkingHours()) {
+    //   setCSMessage("Platform working hours are from 11:00 AM to 11:00 PM Eastern Time")
+    //   setShowCSModal(true)
+    //   return
+    // }
 
     if (user.walletBalance < 0) {
       setShowCSModal(true)
